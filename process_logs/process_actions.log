@@ -1,0 +1,400 @@
+gettid()                                = 1
+epoll_wait(4,  <detached ...>
+restart_syscall(<... resuming interrupted read ...>) = 1
+read(3, "\1\0\0\0\0\0\0\0", 16)         = 8
+recvmsg(33, {msg_namelen=0}, 0)         = -1 EAGAIN (Recurso temporariamente indisponível)
+poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=10, events=POLLIN}, {fd=26, events=POLLIN}, {fd=28, events=POLLIN}, {fd=29, events=POLLIN}, {fd=33, events=POLLIN}, {fd=35, events=POLLIN}, {fd=43, events=POLLIN}, {fd=44, events=POLLIN}, {fd=46, events=POLLIN}, {fd=50, events=POLLIN}, {fd=91, events=POLLIN}, {fd=93, events=POLLIN}], 14, 3960) = 1 ([{fd=29, revents=POLLIN}])
+write(3, "\1\0\0\0\0\0\0\0", 8)         = 8
+epoll_wait(29, [{events=EPOLLIN, data={u32=634935872, u64=94726138649152}}], 32, 0) = 1
+recvmsg(34, {msg_name=NULL, msg_namelen=0, msg_iov=[{iov_base="\26\0\0\0\3\0\f\0)\0\0\0\26\0\0\0\1\0\24\0'\0\0\0\0\0\0\0\0\0\0\0"..., iov_len=1576}, {iov_base="", iov_len=2520}], msg_iovlen=2, msg_controllen=0, msg_flags=MSG_CMSG_CLOEXEC}, MSG_DONTWAIT|MSG_CMSG_CLOEXEC) = 184
+write(3, "\1\0\0\0\0\0\0\0", 8)         = 8
+write(3, "\1\0\0\0\0\0\0\0", 8)         = 8
+recvmsg(33, {msg_namelen=0}, 0)         = -1 EAGAIN (Recurso temporariamente indisponível)
+sendmsg(34, {msg_name=NULL, msg_namelen=0, msg_iov=[{iov_base="'\0\0\0\0\0\10\0", iov_len=8}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, MSG_DONTWAIT|MSG_NOSIGNAL) = 8
+poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=10, events=POLLIN}, {fd=26, events=POLLIN}, {fd=28, events=POLLIN}, {fd=29, events=POLLIN}, {fd=33, events=POLLIN}, {fd=35, events=POLLIN}, {fd=43, events=POLLIN}, {fd=44, events=POLLIN}, {fd=46, events=POLLIN}, {fd=50, events=POLLIN}, {fd=91, events=POLLIN}, {fd=93, events=POLLIN}], 14, 0) = 1 ([{fd=3, revents=POLLIN}])
+read(3, "\3\0\0\0\0\0\0\0", 16)         = 8
+getpid()                                = 1062
+munmap(0x7f5a25d0e000, 4259840)         = 0
+futex(0x562721ef5c1c, FUTEX_WAKE_PRIVATE, 1) = 1
+futex(0x562721ef5d78, FUTEX_WAKE_PRIVATE, 1) = 1
+futex(0x562721ef5d28, FUTEX_WAKE_PRIVATE, 1) = 0
+getpid()                                = 1062
+futex(0x562727379f98, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY) = 0
+futex(0x562727379f48, FUTEX_WAKE_PRIVATE, 1) = 0
+futex(0x562727379f9c, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY) = 0
+futex(0x562727379f48, FUTEX_WAIT_PRIVATE, 2, NULL) = 0
+futex(0x562727379f48, FUTEX_WAKE_PRIVATE, 1) = 0
+ioctl(10, DRM_IOCTL_MODE_ADDFB2, 0x7fffb3ab99c0) = 0
+ioctl(10, DRM_IOCTL_MODE_PAGE_FLIP, 0x7fffb3ab9960) = 0
+recvmsg(33, {msg_namelen=0}, 0)         = -1 EAGAIN (Recurso temporariamente indisponível)
+sendmsg(34, {msg_name=NULL, msg_namelen=0, msg_iov=[{iov_base=")\0\0\0\0\0\f\0\366a\255\1\1\0\0\0\1\0\f\0)\0\0\0", iov_len=24}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, MSG_DONTWAIT|MSG_NOSIGNAL) = 24
+poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=10, events=POLLIN}, {fd=26, events=POLLIN}, {fd=28, events=POLLIN}, {fd=29, events=POLLIN}, {fd=33, events=POLLIN}, {fd=35, events=POLLIN}, {fd=43, events=POLLIN}, {fd=44, events=POLLIN}, {fd=46, events=POLLIN}, {fd=50, events=POLLIN}, {fd=91, events=POLLIN}, {fd=93, events=POLLIN}], 14, 3918) = 1 ([{fd=10, revents=POLLIN}])
+write(3, "\1\0\0\0\0\0\0\0", 8)         = 8
+read(10, "\2\0\0\0 \0\0\0@\312\303&'V\0\0\354m\0\0\274X\0\0\0\0\0\0(\0\0\0", 1024) = 32
+write(3, "\1\0\0\0\0\0\0\0", 8)         = 8
+recvmsg(33, {msg_namelen=0}, 0)         = -1 EAGAIN (Recurso temporariamente indisponível)
+poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=10, events=POLLIN}, {fd=26, events=POLLIN}, {fd=28, events=POLLIN}, {fd=29, events=POLLIN}, {fd=33, events=POLLIN}, {fd=35, events=POLLIN}, {fd=43, events=POLLIN}, {fd=44, events=POLLIN}, {fd=46, events=POLLIN}, {fd=50, events=POLLIN}, {fd=91, events=POLLIN}, {fd=93, events=POLLIN}], 14, 0) = 1 ([{fd=3, revents=POLLIN}])
+read(3, "\2\0\0\0\0\0\0\0", 16)         = 8
+ioctl(10, DRM_IOCTL_MODE_RMFB, 0x7fffb3ab9fec) = 0
+recvmsg(33, {msg_namelen=0}, 0)         = -1 EAGAIN (Recurso temporariamente indisponível)
+poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=10, events=POLLIN}, {fd=26, events=POLLIN}, {fd=28, events=POLLIN}, {fd=29, events=POLLIN}, {fd=33, events=POLLIN}, {fd=35, events=POLLIN}, {fd=43, events=POLLIN}, {fd=44, events=POLLIN}, {fd=46, events=POLLIN}, {fd=50, events=POLLIN}, {fd=91, events=POLLIN}, {fd=93, events=POLLIN}], 14, 3916) = 1 ([{fd=29, revents=POLLIN}])
+write(3, "\1\0\0\0\0\0\0\0", 8)         = 8
+epoll_wait(29, [{events=EPOLLIN, data={u32=634935872, u64=94726138649152}}], 32, 0) = 1
+recvmsg(34, {msg_name=NULL, msg_namelen=0, msg_iov=[{iov_base="\26\0\0\0\3\0\f\0)\0\0\0\26\0\0\0\1\0\24\0'\0\0\0\0\0\0\0\0\0\0\0"..., iov_len=1392}, {iov_base="", iov_len=2704}], msg_iovlen=2, msg_controllen=0, msg_flags=MSG_CMSG_CLOEXEC}, MSG_DONTWAIT|MSG_CMSG_CLOEXEC) = 64
+write(3, "\1\0\0\0\0\0\0\0", 8)         = 8
+write(3, "\1\0\0\0\0\0\0\0", 8)         = 8
+recvmsg(33, {msg_namelen=0}, 0)         = -1 EAGAIN (Recurso temporariamente indisponível)
+sendmsg(34, {msg_name=NULL, msg_namelen=0, msg_iov=[{iov_base="'\0\0\0\0\0\10\0", iov_len=8}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, MSG_DONTWAIT|MSG_NOSIGNAL) = 8
+poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=10, events=POLLIN}, {fd=26, events=POLLIN}, {fd=28, events=POLLIN}, {fd=29, events=POLLIN}, {fd=33, events=POLLIN}, {fd=35, events=POLLIN}, {fd=43, events=POLLIN}, {fd=44, events=POLLIN}, {fd=46, events=POLLIN}, {fd=50, events=POLLIN}, {fd=91, events=POLLIN}, {fd=93, events=POLLIN}], 14, 0) = 1 ([{fd=3, revents=POLLIN}])
+read(3, "\3\0\0\0\0\0\0\0", 16)         = 8
+getpid()                                = 1062
+futex(0x562721ef5c18, FUTEX_WAKE_PRIVATE, 1) = 1
+futex(0x562721ef5d7c, FUTEX_WAKE_PRIVATE, 1) = 1
+getpid()                                = 1062
+futex(0x562727aca3c8, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY) = 0
+futex(0x562727aca378, FUTEX_WAKE_PRIVATE, 1) = 0
+futex(0x562727aca3cc, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY) = 0
+futex(0x562727aca378, FUTEX_WAIT_PRIVATE, 2, NULL) = 0
+futex(0x562727aca378, FUTEX_WAKE_PRIVATE, 1) = 0
+ioctl(10, DRM_IOCTL_MODE_ADDFB2, 0x7fffb3ab99c0) = 0
+ioctl(10, DRM_IOCTL_MODE_PAGE_FLIP, 0x7fffb3ab9960) = 0
+recvmsg(33, {msg_namelen=0}, 0)         = -1 EAGAIN (Recurso temporariamente indisponível)
+sendmsg(34, {msg_name=NULL, msg_namelen=0, msg_iov=[{iov_base=")\0\0\0\0\0\f\0\372b\255\1\1\0\0\0\1\0\f\0)\0\0\0", iov_len=24}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, MSG_DONTWAIT|MSG_NOSIGNAL) = 24
+poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=10, events=POLLIN}, {fd=26, events=POLLIN}, {fd=28, events=POLLIN}, {fd=29, events=POLLIN}, {fd=33, events=POLLIN}, {fd=35, events=POLLIN}, {fd=43, events=POLLIN}, {fd=44, events=POLLIN}, {fd=46, events=POLLIN}, {fd=50, events=POLLIN}, {fd=91, events=POLLIN}, {fd=93, events=POLLIN}], 14, 3659) = 1 ([{fd=10, revents=POLLIN}])
+write(3, "\1\0\0\0\0\0\0\0", 8)         = 8
+read(10, "\2\0\0\0 \0\0\0\240Q\t$'V\0\0\354m\0\0\365M\4\0\0\0\0\0(\0\0\0", 1024) = 32
+write(3, "\1\0\0\0\0\0\0\0", 8)         = 8
+recvmsg(33, {msg_namelen=0}, 0)         = -1 EAGAIN (Recurso temporariamente indisponível)
+poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=10, events=POLLIN}, {fd=26, events=POLLIN}, {fd=28, events=POLLIN}, {fd=29, events=POLLIN}, {fd=33, events=POLLIN}, {fd=35, events=POLLIN}, {fd=43, events=POLLIN}, {fd=44, events=POLLIN}, {fd=46, events=POLLIN}, {fd=50, events=POLLIN}, {fd=91, events=POLLIN}, {fd=93, events=POLLIN}], 14, 0) = 1 ([{fd=3, revents=POLLIN}])
+read(3, "\2\0\0\0\0\0\0\0", 16)         = 8
+ioctl(10, DRM_IOCTL_MODE_RMFB, 0x7fffb3ab9fec) = 0
+recvmsg(33, {msg_namelen=0}, 0)         = -1 EAGAIN (Recurso temporariamente indisponível)
+poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=10, events=POLLIN}, {fd=26, events=POLLIN}, {fd=28, events=POLLIN}, {fd=29, events=POLLIN}, {fd=33, events=POLLIN}, {fd=35, events=POLLIN}, {fd=43, events=POLLIN}, {fd=44, events=POLLIN}, {fd=46, events=POLLIN}, {fd=50, events=POLLIN}, {fd=91, events=POLLIN}, {fd=93, events=POLLIN}], 14, 3657) = 1 ([{fd=3, revents=POLLIN}])
+read(3, "\1\0\0\0\0\0\0\0", 16)         = 8
+recvmsg(33, {msg_namelen=0}, 0)         = -1 EAGAIN (Recurso temporariamente indisponível)
+poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=10, events=POLLIN}, {fd=26, events=POLLIN}, {fd=28, events=POLLIN}, {fd=29, events=POLLIN}, {fd=33, events=POLLIN}, {fd=35, events=POLLIN}, {fd=43, events=POLLIN}, {fd=44, events=POLLIN}, {fd=46, events=POLLIN}, {fd=50, events=POLLIN}, {fd=91, events=POLLIN}, {fd=93, events=POLLIN}], 14, 2507) = 1 ([{fd=3, revents=POLLIN}])
+read(3, "\1\0\0\0\0\0\0\0", 16)         = 8
+recvmsg(33, {msg_namelen=0}, 0)         = -1 EAGAIN (Recurso temporariamente indisponível)
+poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=10, events=POLLIN}, {fd=26, events=POLLIN}, {fd=28, events=POLLIN}, {fd=29, events=POLLIN}, {fd=33, events=POLLIN}, {fd=35, events=POLLIN}, {fd=43, events=POLLIN}, {fd=44, events=POLLIN}, {fd=46, events=POLLIN}, {fd=50, events=POLLIN}, {fd=91, events=POLLIN}, {fd=93, events=POLLIN}], 14, 1363) = 0 (Timeout)
+getrusage(RUSAGE_SELF, {ru_utime={tv_sec=367, tv_usec=250704}, ru_stime={tv_sec=48, tv_usec=681120}, ...}) = 0
+futex(0x562722270350, FUTEX_WAKE_PRIVATE, 1) = 1
+futex(0x7f5a6cc02f80, FUTEX_WAKE_PRIVATE, 1) = 0
+futex(0x562721dc5a58, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY) = 0
+futex(0x7f5a6cc02f80, FUTEX_WAKE_PRIVATE, 1) = 0
+futex(0x562722270350, FUTEX_WAKE_PRIVATE, 1) = 1
+futex(0x562722270338, FUTEX_WAIT_PRIVATE, 3, NULL) = 0
+futex(0x562722270354, FUTEX_WAKE_PRIVATE, 1) = 1
+futex(0x7f5a6cc02f80, FUTEX_WAKE_PRIVATE, 1) = 0
+futex(0x562722270350, FUTEX_WAKE_PRIVATE, 1) = 1
+futex(0x562722270350, FUTEX_WAKE_PRIVATE, 1) = 1
+futex(0x7f5a6cc02f80, FUTEX_WAKE_PRIVATE, 1) = 1
+futex(0x562722270354, FUTEX_WAKE_PRIVATE, 1) = 1
+futex(0x7f5a6cc02f80, FUTEX_WAKE_PRIVATE, 1) = 1
+futex(0x562721dc5a5c, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY) = -1 EAGAIN (Recurso temporariamente indisponível)
+futex(0x7f5a6cc02f80, FUTEX_WAKE_PRIVATE, 1) = 0
+futex(0x562722270354, FUTEX_WAKE_PRIVATE, 1) = 1
+futex(0x7f5a6cc02f80, FUTEX_WAKE_PRIVATE, 1) = 1
+mmap(0x34fc84fc0000, 65536, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x34fc84fc0000
+futex(0x562722270350, FUTEX_WAKE_PRIVATE, 1) = 1
+futex(0x7f5a6cc02f80, FUTEX_WAKE_PRIVATE, 1) = 1
+mprotect(0x34fc84ff0000, 65536, PROT_READ|PROT_WRITE) = 0
+mprotect(0x34fc85000000, 20480, PROT_READ|PROT_WRITE) = 0
+mprotect(0x34fc84ff0000, 65536, PROT_READ|PROT_EXEC) = 0
+mprotect(0x34fc85000000, 20480, PROT_READ|PROT_EXEC) = 0
+futex(0x562722270350, FUTEX_WAKE_PRIVATE, 1) = 1
+futex(0x7f5a6cc02f80, FUTEX_WAKE_PRIVATE, 1) = 1
+futex(0x562721dc5a58, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY) = 0
+futex(0x7f5a6cc02f80, FUTEX_WAKE_PRIVATE, 1) = 0
+getrusage(RUSAGE_SELF, {ru_utime={tv_sec=367, tv_usec=291370}, ru_stime={tv_sec=48, tv_usec=681120}, ...}) = 0
+recvmsg(33, {msg_namelen=0}, 0)         = -1 EAGAIN (Recurso temporariamente indisponível)
+poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=10, events=POLLIN}, {fd=26, events=POLLIN}, {fd=28, events=POLLIN}, {fd=29, events=POLLIN}, {fd=33, events=POLLIN}, {fd=35, events=POLLIN}, {fd=43, events=POLLIN}, {fd=44, events=POLLIN}, {fd=46, events=POLLIN}, {fd=50, events=POLLIN}, {fd=91, events=POLLIN}, {fd=93, events=POLLIN}], 14, 145960) = 1 ([{fd=3, revents=POLLIN}])
+read(3, "\1\0\0\0\0\0\0\0", 16)         = 8
+recvmsg(33, {msg_namelen=0}, 0)         = -1 EAGAIN (Recurso temporariamente indisponível)
+poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=10, events=POLLIN}, {fd=26, events=POLLIN}, {fd=28, events=POLLIN}, {fd=29, events=POLLIN}, {fd=33, events=POLLIN}, {fd=35, events=POLLIN}, {fd=43, events=POLLIN}, {fd=44, events=POLLIN}, {fd=46, events=POLLIN}, {fd=50, events=POLLIN}, {fd=91, events=POLLIN}, {fd=93, events=POLLIN}], 14, 10463) = 1 ([{fd=3, revents=POLLIN}])
+read(3, "\1\0\0\0\0\0\0\0", 16)         = 8
+mprotect(0x34fc85004000, 4096, PROT_READ|PROT_WRITE) = 0
+mprotect(0x34fc85004000, 4096, PROT_READ|PROT_EXEC) = 0
+mprotect(0x34fc85004000, 4096, PROT_READ|PROT_WRITE) = 0
+mprotect(0x34fc85004000, 4096, PROT_READ|PROT_EXEC) = 0
+mprotect(0x34fc85004000, 4096, PROT_READ|PROT_WRITE) = 0
+mprotect(0x34fc85004000, 4096, PROT_READ|PROT_EXEC) = 0
+mprotect(0x34fc85004000, 4096, PROT_READ|PROT_WRITE) = 0
+mprotect(0x34fc85004000, 4096, PROT_READ|PROT_EXEC) = 0
+mprotect(0x34fc85004000, 8192, PROT_READ|PROT_WRITE) = 0
+mprotect(0x34fc85004000, 8192, PROT_READ|PROT_EXEC) = 0
+mprotect(0x34fc85005000, 4096, PROT_READ|PROT_WRITE) = 0
+mprotect(0x34fc85005000, 4096, PROT_READ|PROT_EXEC) = 0
+mprotect(0x34fc85005000, 4096, PROT_READ|PROT_WRITE) = 0
+mprotect(0x34fc85005000, 4096, PROT_READ|PROT_EXEC) = 0
+mprotect(0x34fc85005000, 4096, PROT_READ|PROT_WRITE) = 0
+mprotect(0x34fc85005000, 4096, PROT_READ|PROT_EXEC) = 0
+mprotect(0x34fc85005000, 4096, PROT_READ|PROT_WRITE) = 0
+mprotect(0x34fc85005000, 4096, PROT_READ|PROT_EXEC) = 0
+mprotect(0x34fc85005000, 4096, PROT_READ|PROT_WRITE) = 0
+mprotect(0x34fc85005000, 4096, PROT_READ|PROT_EXEC) = 0
+mprotect(0x34fc85005000, 4096, PROT_READ|PROT_WRITE) = 0
+mprotect(0x34fc85005000, 4096, PROT_READ|PROT_EXEC) = 0
+mprotect(0x34fc85005000, 4096, PROT_READ|PROT_WRITE) = 0
+mprotect(0x34fc85005000, 4096, PROT_READ|PROT_EXEC) = 0
+mprotect(0x34fc85005000, 4096, PROT_READ|PROT_WRITE) = 0
+mprotect(0x34fc85005000, 4096, PROT_READ|PROT_EXEC) = 0
+mprotect(0x34fc85005000, 4096, PROT_READ|PROT_WRITE) = 0
+mprotect(0x34fc85005000, 4096, PROT_READ|PROT_EXEC) = 0
+recvmsg(33, {msg_namelen=0}, 0)         = -1 EAGAIN (Recurso temporariamente indisponível)
+poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=10, events=POLLIN}, {fd=26, events=POLLIN}, {fd=28, events=POLLIN}, {fd=29, events=POLLIN}, {fd=33, events=POLLIN}, {fd=35, events=POLLIN}, {fd=43, events=POLLIN}, {fd=44, events=POLLIN}, {fd=46, events=POLLIN}, {fd=50, events=POLLIN}, {fd=91, events=POLLIN}, {fd=93, events=POLLIN}], 14, 9323) = 1 ([{fd=3, revents=POLLIN}])
+read(3, "\1\0\0\0\0\0\0\0", 16)         = 8
+mprotect(0x34fc85005000, 4096, PROT_READ|PROT_WRITE) = 0
+mprotect(0x34fc85005000, 4096, PROT_READ|PROT_EXEC) = 0
+mprotect(0x34fc85005000, 4096, PROT_READ|PROT_WRITE) = 0
+mprotect(0x34fc85005000, 4096, PROT_READ|PROT_EXEC) = 0
+recvmsg(33, {msg_namelen=0}, 0)         = -1 EAGAIN (Recurso temporariamente indisponível)
+poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=10, events=POLLIN}, {fd=26, events=POLLIN}, {fd=28, events=POLLIN}, {fd=29, events=POLLIN}, {fd=33, events=POLLIN}, {fd=35, events=POLLIN}, {fd=43, events=POLLIN}, {fd=44, events=POLLIN}, {fd=46, events=POLLIN}, {fd=50, events=POLLIN}, {fd=91, events=POLLIN}, {fd=93, events=POLLIN}], 14, 7414) = 1 ([{fd=3, revents=POLLIN}])
+read(3, "\1\0\0\0\0\0\0\0", 16)         = 8
+recvmsg(33, {msg_namelen=0}, 0)         = -1 EAGAIN (Recurso temporariamente indisponível)
+poll([{fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=10, events=POLLIN}, {fd=26, events=POLLIN}, {fd=28, events=POLLIN}, {fd=29, events=POLLIN}, {fd=33, events=POLLIN}, {fd=35, events=POLLIN}, {fd=43, events=POLLIN}, {fd=44, events=POLLIN}, {fd=46, events=POLLIN}, {fd=50, events=POLLIN}, {fd=91, events=POLLIN}, {fd=93, events=POLLIN}], 14, 6299 <detached ...>
+restart_syscall(<... resuming interrupted read ...>) = 0
+inotify_add_watch(41, "/home/alexandre/.config/menus/applications-merged", IN_MODIFY|IN_ATTRIB|IN_CLOSE_WRITE|IN_MOVED_FROM|IN_MOVED_TO|IN_CREATE|IN_DELETE|IN_DELETE_SELF|IN_MOVE_SELF|IN_UNMOUNT|IN_ONLYDIR) = -1 ENOENT (Arquivo ou diretório inexistente)
+inotify_add_watch(41, "/etc/xdg/menus/applications-merged", IN_MODIFY|IN_ATTRIB|IN_CLOSE_WRITE|IN_MOVED_FROM|IN_MOVED_TO|IN_CREATE|IN_DELETE|IN_DELETE_SELF|IN_MOVE_SELF|IN_UNMOUNT|IN_ONLYDIR) = -1 ENOENT (Arquivo ou diretório inexistente)
+inotify_add_watch(41, "/home/alexandre/.config/menus", IN_MODIFY|IN_ATTRIB|IN_CLOSE_WRITE|IN_MOVED_FROM|IN_MOVED_TO|IN_CREATE|IN_DELETE|IN_DELETE_SELF|IN_MOVE_SELF|IN_UNMOUNT|IN_ONLYDIR) = -1 ENOENT (Arquivo ou diretório inexistente)
+inotify_add_watch(41, "/usr/local/share/desktop-directories", IN_MODIFY|IN_ATTRIB|IN_CLOSE_WRITE|IN_MOVED_FROM|IN_MOVED_TO|IN_CREATE|IN_DELETE|IN_DELETE_SELF|IN_MOVE_SELF|IN_UNMOUNT|IN_ONLYDIR) = -1 ENOENT (Arquivo ou diretório inexistente)
+inotify_add_watch(41, "/home/alexandre/.local/share/desktop-directories", IN_MODIFY|IN_ATTRIB|IN_CLOSE_WRITE|IN_MOVED_FROM|IN_MOVED_TO|IN_CREATE|IN_DELETE|IN_DELETE_SELF|IN_MOVE_SELF|IN_UNMOUNT|IN_ONLYDIR) = -1 ENOENT (Arquivo ou diretório inexistente)
+poll([{fd=4, events=POLLIN}, {fd=41, events=POLLIN}, {fd=98, events=POLLIN}], 3, 3996) = 0 (Timeout)
+inotify_add_watch(41, "/home/alexandre/.config/menus/applications-merged", IN_MODIFY|IN_ATTRIB|IN_CLOSE_WRITE|IN_MOVED_FROM|IN_MOVED_TO|IN_CREATE|IN_DELETE|IN_DELETE_SELF|IN_MOVE_SELF|IN_UNMOUNT|IN_ONLYDIR) = -1 ENOENT (Arquivo ou diretório inexistente)
+inotify_add_watch(41, "/etc/xdg/menus/applications-merged", IN_MODIFY|IN_ATTRIB|IN_CLOSE_WRITE|IN_MOVED_FROM|IN_MOVED_TO|IN_CREATE|IN_DELETE|IN_DELETE_SELF|IN_MOVE_SELF|IN_UNMOUNT|IN_ONLYDIR) = -1 ENOENT (Arquivo ou diretório inexistente)
+inotify_add_watch(41, "/home/alexandre/.config/menus", IN_MODIFY|IN_ATTRIB|IN_CLOSE_WRITE|IN_MOVED_FROM|IN_MOVED_TO|IN_CREATE|IN_DELETE|IN_DELETE_SELF|IN_MOVE_SELF|IN_UNMOUNT|IN_ONLYDIR) = -1 ENOENT (Arquivo ou diretório inexistente)
+inotify_add_watch(41, "/usr/local/share/desktop-directories", IN_MODIFY|IN_ATTRIB|IN_CLOSE_WRITE|IN_MOVED_FROM|IN_MOVED_TO|IN_CREATE|IN_DELETE|IN_DELETE_SELF|IN_MOVE_SELF|IN_UNMOUNT|IN_ONLYDIR) = -1 ENOENT (Arquivo ou diretório inexistente)
+inotify_add_watch(41, "/home/alexandre/.local/share/desktop-directories", IN_MODIFY|IN_ATTRIB|IN_CLOSE_WRITE|IN_MOVED_FROM|IN_MOVED_TO|IN_CREATE|IN_DELETE|IN_DELETE_SELF|IN_MOVE_SELF|IN_UNMOUNT|IN_ONLYDIR) = -1 ENOENT (Arquivo ou diretório inexistente)
+poll([{fd=4, events=POLLIN}, {fd=41, events=POLLIN}, {fd=98, events=POLLIN}], 3, 3996) = 0 (Timeout)
+inotify_add_watch(41, "/home/alexandre/.config/menus/applications-merged", IN_MODIFY|IN_ATTRIB|IN_CLOSE_WRITE|IN_MOVED_FROM|IN_MOVED_TO|IN_CREATE|IN_DELETE|IN_DELETE_SELF|IN_MOVE_SELF|IN_UNMOUNT|IN_ONLYDIR) = -1 ENOENT (Arquivo ou diretório inexistente)
+inotify_add_watch(41, "/etc/xdg/menus/applications-merged", IN_MODIFY|IN_ATTRIB|IN_CLOSE_WRITE|IN_MOVED_FROM|IN_MOVED_TO|IN_CREATE|IN_DELETE|IN_DELETE_SELF|IN_MOVE_SELF|IN_UNMOUNT|IN_ONLYDIR) = -1 ENOENT (Arquivo ou diretório inexistente)
+inotify_add_watch(41, "/home/alexandre/.config/menus", IN_MODIFY|IN_ATTRIB|IN_CLOSE_WRITE|IN_MOVED_FROM|IN_MOVED_TO|IN_CREATE|IN_DELETE|IN_DELETE_SELF|IN_MOVE_SELF|IN_UNMOUNT|IN_ONLYDIR) = -1 ENOENT (Arquivo ou diretório inexistente)
+inotify_add_watch(41, "/usr/local/share/desktop-directories", IN_MODIFY|IN_ATTRIB|IN_CLOSE_WRITE|IN_MOVED_FROM|IN_MOVED_TO|IN_CREATE|IN_DELETE|IN_DELETE_SELF|IN_MOVE_SELF|IN_UNMOUNT|IN_ONLYDIR) = -1 ENOENT (Arquivo ou diretório inexistente)
+inotify_add_watch(41, "/home/alexandre/.local/share/desktop-directories", IN_MODIFY|IN_ATTRIB|IN_CLOSE_WRITE|IN_MOVED_FROM|IN_MOVED_TO|IN_CREATE|IN_DELETE|IN_DELETE_SELF|IN_MOVE_SELF|IN_UNMOUNT|IN_ONLYDIR) = -1 ENOENT (Arquivo ou diretório inexistente)
+poll([{fd=4, events=POLLIN}, {fd=41, events=POLLIN}, {fd=98, events=POLLIN}], 3, 3995 <detached ...>
+restart_syscall(<... resuming interrupted read ...>) = 1
+write(6, "\1\0\0\0\0\0\0\0", 8)         = 8
+recvmsg(51, {msg_name=NULL, msg_namelen=0, msg_iov=[{iov_base="l\1\1\1\20\0\0\0=\v\0\0\232\0\0\0", iov_len=16}], msg_iovlen=1, msg_controllen=0, msg_flags=MSG_CMSG_CLOEXEC}, MSG_CMSG_CLOEXEC) = 16
+poll([{fd=51, events=POLLIN}], 1, 0)    = 1 ([{fd=51, revents=POLLIN}])
+recvmsg(51, {msg_name=NULL, msg_namelen=0, msg_iov=[{iov_base="\7\1s\0\24\0\0\0org.freedesktop.DBus\0\0\0\0"..., iov_len=176}], msg_iovlen=1, msg_controllen=0, msg_flags=MSG_CMSG_CLOEXEC}, MSG_CMSG_CLOEXEC) = 176
+write(6, "\1\0\0\0\0\0\0\0", 8)         = 8
+write(6, "\1\0\0\0\0\0\0\0", 8)         = 8
+poll([{fd=5, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}], 3, 0) = 1 ([{fd=6, revents=POLLIN}])
+read(6, "\3\0\0\0\0\0\0\0", 16)         = 8
+write(3, "\1\0\0\0\0\0\0\0", 8)         = 8
+poll([{fd=51, events=POLLIN}], 1, 0)    = 0 (Timeout)
+write(6, "\1\0\0\0\0\0\0\0", 8)         = 8
+poll([{fd=5, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=51, events=POLLIN}], 4, -1) = 1 ([{fd=6, revents=POLLIN}])
+read(6, "\1\0\0\0\0\0\0\0", 16)         = 8
+poll([{fd=5, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=51, events=POLLIN}], 4, -1) = 1 ([{fd=51, revents=POLLIN}])
+write(6, "\1\0\0\0\0\0\0\0", 8)         = 8
+recvmsg(51, {msg_name=NULL, msg_namelen=0, msg_iov=[{iov_base="l\1\1\1\20\0\0\0>\v\0\0\232\0\0\0", iov_len=16}], msg_iovlen=1, msg_controllen=0, msg_flags=MSG_CMSG_CLOEXEC}, MSG_CMSG_CLOEXEC) = 16
+poll([{fd=51, events=POLLIN}], 1, 0)    = 1 ([{fd=51, revents=POLLIN}])
+recvmsg(51, {msg_name=NULL, msg_namelen=0, msg_iov=[{iov_base="\7\1s\0\24\0\0\0org.freedesktop.DBus\0\0\0\0"..., iov_len=176}], msg_iovlen=1, msg_controllen=0, msg_flags=MSG_CMSG_CLOEXEC}, MSG_CMSG_CLOEXEC) = 176
+write(6, "\1\0\0\0\0\0\0\0", 8)         = 8
+write(6, "\1\0\0\0\0\0\0\0", 8)         = 8
+poll([{fd=5, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}], 3, 0) = 1 ([{fd=6, revents=POLLIN}])
+read(6, "\3\0\0\0\0\0\0\0", 16)         = 8
+write(3, "\1\0\0\0\0\0\0\0", 8)         = 8
+poll([{fd=51, events=POLLIN}], 1, 0)    = 0 (Timeout)
+write(6, "\1\0\0\0\0\0\0\0", 8)         = 8
+poll([{fd=5, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=51, events=POLLIN}], 4, -1) = 1 ([{fd=6, revents=POLLIN}])
+read(6, "\1\0\0\0\0\0\0\0", 16)         = 8
+poll([{fd=5, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=51, events=POLLIN}], 4, -1) = 1 ([{fd=51, revents=POLLIN}])
+write(6, "\1\0\0\0\0\0\0\0", 8)         = 8
+recvmsg(51, {msg_name=NULL, msg_namelen=0, msg_iov=[{iov_base="l\1\1\1\20\0\0\0?\v\0\0\232\0\0\0", iov_len=16}], msg_iovlen=1, msg_controllen=0, msg_flags=MSG_CMSG_CLOEXEC}, MSG_CMSG_CLOEXEC) = 16
+poll([{fd=51, events=POLLIN}], 1, 0)    = 1 ([{fd=51, revents=POLLIN}])
+recvmsg(51, {msg_name=NULL, msg_namelen=0, msg_iov=[{iov_base="\7\1s\0\24\0\0\0org.freedesktop.DBus\0\0\0\0"..., iov_len=176}], msg_iovlen=1, msg_controllen=0, msg_flags=MSG_CMSG_CLOEXEC}, MSG_CMSG_CLOEXEC) = 176
+write(6, "\1\0\0\0\0\0\0\0", 8)         = 8
+write(6, "\1\0\0\0\0\0\0\0", 8)         = 8
+poll([{fd=5, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}], 3, 0) = 1 ([{fd=6, revents=POLLIN}])
+read(6, "\3\0\0\0\0\0\0\0", 16)         = 8
+write(3, "\1\0\0\0\0\0\0\0", 8)         = 8
+poll([{fd=51, events=POLLIN}], 1, 0)    = 0 (Timeout)
+write(6, "\1\0\0\0\0\0\0\0", 8)         = 8
+poll([{fd=5, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=51, events=POLLIN}], 4, -1) = 1 ([{fd=6, revents=POLLIN}])
+read(6, "\1\0\0\0\0\0\0\0", 16)         = 8
+poll([{fd=5, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=51, events=POLLIN}], 4, -1) = 1 ([{fd=51, revents=POLLIN}])
+write(6, "\1\0\0\0\0\0\0\0", 8)         = 8
+recvmsg(51, {msg_name=NULL, msg_namelen=0, msg_iov=[{iov_base="l\1\1\1\20\0\0\0@\v\0\0\232\0\0\0", iov_len=16}], msg_iovlen=1, msg_controllen=0, msg_flags=MSG_CMSG_CLOEXEC}, MSG_CMSG_CLOEXEC) = 16
+poll([{fd=51, events=POLLIN}], 1, 0)    = 1 ([{fd=51, revents=POLLIN}])
+recvmsg(51, {msg_name=NULL, msg_namelen=0, msg_iov=[{iov_base="\7\1s\0\24\0\0\0org.freedesktop.DBus\0\0\0\0"..., iov_len=176}], msg_iovlen=1, msg_controllen=0, msg_flags=MSG_CMSG_CLOEXEC}, MSG_CMSG_CLOEXEC) = 176
+write(6, "\1\0\0\0\0\0\0\0", 8)         = 8
+write(6, "\1\0\0\0\0\0\0\0", 8)         = 8
+poll([{fd=5, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}], 3, 0) = 1 ([{fd=6, revents=POLLIN}])
+read(6, "\3\0\0\0\0\0\0\0", 16)         = 8
+write(3, "\1\0\0\0\0\0\0\0", 8)         = 8
+poll([{fd=51, events=POLLIN}], 1, 0)    = 0 (Timeout)
+write(6, "\1\0\0\0\0\0\0\0", 8)         = 8
+poll([{fd=5, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=51, events=POLLIN}], 4, -1) = 1 ([{fd=6, revents=POLLIN}])
+read(6, "\1\0\0\0\0\0\0\0", 16)         = 8
+poll([{fd=5, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=51, events=POLLIN}], 4, -1) = 1 ([{fd=51, revents=POLLIN}])
+write(6, "\1\0\0\0\0\0\0\0", 8)         = 8
+recvmsg(51, {msg_name=NULL, msg_namelen=0, msg_iov=[{iov_base="l\1\1\1\20\0\0\0A\v\0\0\232\0\0\0", iov_len=16}], msg_iovlen=1, msg_controllen=0, msg_flags=MSG_CMSG_CLOEXEC}, MSG_CMSG_CLOEXEC) = 16
+poll([{fd=51, events=POLLIN}], 1, 0)    = 1 ([{fd=51, revents=POLLIN}])
+recvmsg(51, {msg_name=NULL, msg_namelen=0, msg_iov=[{iov_base="\7\1s\0\24\0\0\0org.freedesktop.DBus\0\0\0\0"..., iov_len=176}], msg_iovlen=1, msg_controllen=0, msg_flags=MSG_CMSG_CLOEXEC}, MSG_CMSG_CLOEXEC) = 176
+write(6, "\1\0\0\0\0\0\0\0", 8)         = 8
+write(6, "\1\0\0\0\0\0\0\0", 8)         = 8
+poll([{fd=5, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}], 3, 0) = 1 ([{fd=6, revents=POLLIN}])
+read(6, "\3\0\0\0\0\0\0\0", 16)         = 8
+write(3, "\1\0\0\0\0\0\0\0", 8)         = 8
+poll([{fd=51, events=POLLIN}], 1, 0)    = 0 (Timeout)
+write(6, "\1\0\0\0\0\0\0\0", 8)         = 8
+poll([{fd=5, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=51, events=POLLIN}], 4, -1) = 1 ([{fd=6, revents=POLLIN}])
+read(6, "\1\0\0\0\0\0\0\0", 16)         = 8
+poll([{fd=5, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=51, events=POLLIN}], 4, -1) = 1 ([{fd=51, revents=POLLIN}])
+write(6, "\1\0\0\0\0\0\0\0", 8)         = 8
+recvmsg(51, {msg_name=NULL, msg_namelen=0, msg_iov=[{iov_base="l\1\1\1\20\0\0\0B\v\0\0\232\0\0\0", iov_len=16}], msg_iovlen=1, msg_controllen=0, msg_flags=MSG_CMSG_CLOEXEC}, MSG_CMSG_CLOEXEC) = 16
+poll([{fd=51, events=POLLIN}], 1, 0)    = 1 ([{fd=51, revents=POLLIN}])
+recvmsg(51, {msg_name=NULL, msg_namelen=0, msg_iov=[{iov_base="\7\1s\0\24\0\0\0org.freedesktop.DBus\0\0\0\0"..., iov_len=176}], msg_iovlen=1, msg_controllen=0, msg_flags=MSG_CMSG_CLOEXEC}, MSG_CMSG_CLOEXEC) = 176
+write(6, "\1\0\0\0\0\0\0\0", 8)         = 8
+write(6, "\1\0\0\0\0\0\0\0", 8)         = 8
+poll([{fd=5, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}], 3, 0) = 1 ([{fd=6, revents=POLLIN}])
+read(6, "\3\0\0\0\0\0\0\0", 16)         = 8
+write(3, "\1\0\0\0\0\0\0\0", 8)         = 8
+poll([{fd=51, events=POLLIN}], 1, 0)    = 0 (Timeout)
+write(6, "\1\0\0\0\0\0\0\0", 8)         = 8
+poll([{fd=5, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=51, events=POLLIN}], 4, -1) = 1 ([{fd=6, revents=POLLIN}])
+read(6, "\1\0\0\0\0\0\0\0", 16)         = 8
+poll([{fd=5, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=51, events=POLLIN}], 4, -1) = 1 ([{fd=51, revents=POLLIN}])
+write(6, "\1\0\0\0\0\0\0\0", 8)         = 8
+recvmsg(51, {msg_name=NULL, msg_namelen=0, msg_iov=[{iov_base="l\1\1\1\20\0\0\0C\v\0\0\232\0\0\0", iov_len=16}], msg_iovlen=1, msg_controllen=0, msg_flags=MSG_CMSG_CLOEXEC}, MSG_CMSG_CLOEXEC) = 16
+poll([{fd=51, events=POLLIN}], 1, 0)    = 1 ([{fd=51, revents=POLLIN}])
+recvmsg(51, {msg_name=NULL, msg_namelen=0, msg_iov=[{iov_base="\7\1s\0\24\0\0\0org.freedesktop.DBus\0\0\0\0"..., iov_len=176}], msg_iovlen=1, msg_controllen=0, msg_flags=MSG_CMSG_CLOEXEC}, MSG_CMSG_CLOEXEC) = 176
+write(6, "\1\0\0\0\0\0\0\0", 8)         = 8
+write(6, "\1\0\0\0\0\0\0\0", 8)         = 8
+poll([{fd=5, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}], 3, 0) = 1 ([{fd=6, revents=POLLIN}])
+read(6, "\3\0\0\0\0\0\0\0", 16)         = 8
+write(3, "\1\0\0\0\0\0\0\0", 8)         = 8
+poll([{fd=51, events=POLLIN}], 1, 0)    = 0 (Timeout)
+write(6, "\1\0\0\0\0\0\0\0", 8)         = 8
+poll([{fd=5, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=51, events=POLLIN}], 4, -1) = 1 ([{fd=6, revents=POLLIN}])
+read(6, "\1\0\0\0\0\0\0\0", 16)         = 8
+poll([{fd=5, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=51, events=POLLIN}], 4, -1 <detached ...>
+futex(0x562721ef5c1c, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY) = 0
+futex(0x562721ef5bc8, FUTEX_WAKE_PRIVATE, 1) = 0
+ioctl(11, DRM_IOCTL_MODE_MAP_DUMB, 0x7f5a653fe750) = 0
+futex(0x562721ef8834, FUTEX_WAKE_PRIVATE, 2147483647) = 1
+futex(0x562727379f98, FUTEX_WAKE_PRIVATE, 2147483647) = 1
+futex(0x562727379f48, FUTEX_WAKE_PRIVATE, 1) = 0
+futex(0x562721ef8834, FUTEX_WAIT_PRIVATE, 177986, NULL) = 0
+futex(0x562721ef5c18, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY) = 0
+futex(0x562721ef5bc8, FUTEX_WAKE_PRIVATE, 1) = 0
+ioctl(11, DRM_IOCTL_MODE_MAP_DUMB, 0x7f5a653fe750) = 0
+mmap(NULL, 4259840, PROT_READ|PROT_WRITE, MAP_SHARED, 11, 0x100bbd000) = 0x7f5a25d0e000
+futex(0x562721ef8834, FUTEX_WAKE_PRIVATE, 2147483647) = 1
+futex(0x56272203a808, FUTEX_WAKE_PRIVATE, 1) = 0
+futex(0x562727aca3cc, FUTEX_WAKE_PRIVATE, 2147483647) = 1
+futex(0x562727aca378, FUTEX_WAKE_PRIVATE, 1) = 1
+futex(0x562721ef8834, FUTEX_WAKE_PRIVATE, 2147483647) = 1
+futex(0x562721ef5c1c, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <detached ...>
+futex(0x562721ef5d78, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY) = 0
+futex(0x562721ef5d28, FUTEX_WAIT_PRIVATE, 2, NULL) = -1 EAGAIN (Recurso temporariamente indisponível)
+futex(0x562721ef5d28, FUTEX_WAKE_PRIVATE, 1) = 0
+futex(0x562721ef8834, FUTEX_WAIT_PRIVATE, 177984, NULL) = 0
+futex(0x562727379f48, FUTEX_WAIT_PRIVATE, 2, NULL) = -1 EAGAIN (Recurso temporariamente indisponível)
+futex(0x562727379f9c, FUTEX_WAKE_PRIVATE, 2147483647) = 1
+futex(0x562727379f48, FUTEX_WAKE_PRIVATE, 1) = 1
+futex(0x562721ef8834, FUTEX_WAKE_PRIVATE, 2147483647) = 1
+futex(0x562721ef5d7c, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY) = 0
+futex(0x562721ef5d28, FUTEX_WAKE_PRIVATE, 1) = 0
+futex(0x562721ef8834, FUTEX_WAIT_PRIVATE, 177988, NULL) = 0
+futex(0x562727aca3c8, FUTEX_WAKE_PRIVATE, 2147483647) = 1
+futex(0x562721ef8834, FUTEX_WAIT_PRIVATE, 177990, NULL) = 0
+futex(0x562721ef5d78, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <detached ...>
+futex(0x562721efd800, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <detached ...>
+futex(0x562721efd800, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <detached ...>
+futex(0x562721e50ca8, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <detached ...>
+restart_syscall(<... resuming interrupted read ...> <detached ...>
+restart_syscall(<... resuming interrupted read ...> <detached ...>
+futex(0x562722270350, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY) = 0
+futex(0x562722270338, FUTEX_WAKE_PRIVATE, 2147483647) = 1
+futex(0x7f5a6cc02f80, FUTEX_WAIT_PRIVATE, 2, NULL) = -1 EAGAIN (Recurso temporariamente indisponível)
+futex(0x7f5a6cc02f80, FUTEX_WAKE_PRIVATE, 1) = 0
+futex(0x562722270350, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY) = 0
+futex(0x7f5a6cc02f80, FUTEX_WAIT_PRIVATE, 2, NULL) = 0
+futex(0x7f5a6cc02f80, FUTEX_WAKE_PRIVATE, 1) = 0
+futex(0x562722270354, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY) = 0
+futex(0x7f5a6cc02f80, FUTEX_WAIT_PRIVATE, 2, NULL) = 0
+futex(0x7f5a6cc02f80, FUTEX_WAKE_PRIVATE, 1) = 0
+futex(0x562722270350, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY) = 0
+futex(0x7f5a6cc02f80, FUTEX_WAIT_PRIVATE, 2, NULL) = 0
+futex(0x7f5a6cc02f80, FUTEX_WAKE_PRIVATE, 1) = 0
+madvise(0x2bc387fa8000, 4096, MADV_DONTNEED) = 0
+madvise(0x345a77d9f000, 4096, MADV_DONTNEED) = 0
+madvise(0xfeb96e36000, 4096, MADV_DONTNEED) = 0
+madvise(0xfeb96e3c000, 4096, MADV_DONTNEED) = 0
+madvise(0xfeb96e42000, 4096, MADV_DONTNEED) = 0
+madvise(0xfeb96e49000, 4096, MADV_DONTNEED) = 0
+madvise(0xfeb96e4b000, 4096, MADV_DONTNEED) = 0
+madvise(0xfeb96e4c000, 4096, MADV_DONTNEED) = 0
+madvise(0xfeb96e4d000, 4096, MADV_DONTNEED) = 0
+futex(0x562721dc5a58, FUTEX_WAKE_PRIVATE, 2147483647) = 1
+futex(0x562722270354, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <detached ...>
+futex(0x562722270350, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY) = 0
+futex(0x7f5a6cc02f80, FUTEX_WAIT_PRIVATE, 2, NULL) = -1 EAGAIN (Recurso temporariamente indisponível)
+futex(0x7f5a6cc02f80, FUTEX_WAKE_PRIVATE, 1) = 0
+futex(0x562721dc5a58, FUTEX_WAKE_PRIVATE, 2147483647) = 1
+futex(0x562722270354, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY) = 0
+futex(0x7f5a6cc02f80, FUTEX_WAIT_PRIVATE, 2, NULL) = -1 EAGAIN (Recurso temporariamente indisponível)
+futex(0x7f5a6cc02f80, FUTEX_WAKE_PRIVATE, 1) = 0
+futex(0x562722270350, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY) = 0
+futex(0x7f5a6cc02f80, FUTEX_WAIT_PRIVATE, 2, NULL) = 0
+futex(0x7f5a6cc02f80, FUTEX_WAKE_PRIVATE, 1) = 1
+futex(0x562722270354, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY) = 0
+futex(0x7f5a6cc02f80, FUTEX_WAIT_PRIVATE, 2, NULL) = 0
+futex(0x7f5a6cc02f80, FUTEX_WAKE_PRIVATE, 1) = 0
+futex(0x562721dc5a5c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+futex(0x562722270350, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY) = 0
+futex(0x7f5a6cc02f80, FUTEX_WAIT_PRIVATE, 2, NULL) = 0
+futex(0x7f5a6cc02f80, FUTEX_WAKE_PRIVATE, 1) = 0
+futex(0x562722270354, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <detached ...>
+COMMAND PID USER   FD      TYPE DEVICE SIZE/OFF NODE NAME
+netns     6 root  cwd       DIR    8,1     4096    2 /
+netns     6 root  rtd       DIR    8,1     4096    2 /
+netns     6 root  txt   unknown                      /proc/6/exe
+=======
+COMMAND PID USER   FD      TYPE DEVICE SIZE/OFF NODE NAME
+netns     6 root  cwd       DIR    8,1     4096    2 /
+netns     6 root  rtd       DIR    8,1     4096    2 /
+netns     6 root  txt   unknown                      /proc/6/exe
+=======
+COMMAND PID USER   FD      TYPE DEVICE SIZE/OFF NODE NAME
+netns     6 root  cwd       DIR    8,1     4096    2 /
+netns     6 root  rtd       DIR    8,1     4096    2 /
+netns     6 root  txt   unknown                      /proc/6/exe
+=======
+COMMAND PID USER   FD      TYPE DEVICE SIZE/OFF NODE NAME
+netns     6 root  cwd       DIR    8,1     4096    2 /
+netns     6 root  rtd       DIR    8,1     4096    2 /
+netns     6 root  txt   unknown                      /proc/6/exe
+=======
+COMMAND PID USER   FD      TYPE DEVICE SIZE/OFF NODE NAME
+netns     6 root  cwd       DIR    8,1     4096    2 /
+netns     6 root  rtd       DIR    8,1     4096    2 /
+netns     6 root  txt   unknown                      /proc/6/exe
+=======
+COMMAND PID USER   FD      TYPE DEVICE SIZE/OFF NODE NAME
+netns     6 root  cwd       DIR    8,1     4096    2 /
+netns     6 root  rtd       DIR    8,1     4096    2 /
+netns     6 root  txt   unknown                      /proc/6/exe
+=======
+COMMAND PID USER   FD      TYPE DEVICE SIZE/OFF NODE NAME
+netns     6 root  cwd       DIR    8,1     4096    2 /
+netns     6 root  rtd       DIR    8,1     4096    2 /
+netns     6 root  txt   unknown                      /proc/6/exe
+=======
+COMMAND PID USER   FD      TYPE DEVICE SIZE/OFF NODE NAME
+netns     6 root  cwd       DIR    8,1     4096    2 /
+netns     6 root  rtd       DIR    8,1     4096    2 /
+netns     6 root  txt   unknown                      /proc/6/exe
+=======
+COMMAND PID USER   FD      TYPE DEVICE SIZE/OFF NODE NAME
+netns     6 root  cwd       DIR    8,1     4096    2 /
+netns     6 root  rtd       DIR    8,1     4096    2 /
+netns     6 root  txt   unknown                      /proc/6/exe
+=======
+COMMAND PID USER   FD      TYPE DEVICE SIZE/OFF NODE NAME
+netns     6 root  cwd       DIR    8,1     4096    2 /
+netns     6 root  rtd       DIR    8,1     4096    2 /
+netns     6 root  txt   unknown                      /proc/6/exe
+=======

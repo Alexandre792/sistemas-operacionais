@@ -1,0 +1,99 @@
+restart_syscall(<... resuming interrupted read ...>) = 1
+write(6, "\1\0\0\0\0\0\0\0", 8)         = 8
+recvmsg(51, {msg_name=NULL, msg_namelen=0, msg_iov=[{iov_base="l\1\1\1\20\0\0\0=\v\0\0\232\0\0\0", iov_len=16}], msg_iovlen=1, msg_controllen=0, msg_flags=MSG_CMSG_CLOEXEC}, MSG_CMSG_CLOEXEC) = 16
+poll([{fd=51, events=POLLIN}], 1, 0)    = 1 ([{fd=51, revents=POLLIN}])
+recvmsg(51, {msg_name=NULL, msg_namelen=0, msg_iov=[{iov_base="\7\1s\0\24\0\0\0org.freedesktop.DBus\0\0\0\0"..., iov_len=176}], msg_iovlen=1, msg_controllen=0, msg_flags=MSG_CMSG_CLOEXEC}, MSG_CMSG_CLOEXEC) = 176
+write(6, "\1\0\0\0\0\0\0\0", 8)         = 8
+write(6, "\1\0\0\0\0\0\0\0", 8)         = 8
+poll([{fd=5, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}], 3, 0) = 1 ([{fd=6, revents=POLLIN}])
+read(6, "\3\0\0\0\0\0\0\0", 16)         = 8
+write(3, "\1\0\0\0\0\0\0\0", 8)         = 8
+poll([{fd=51, events=POLLIN}], 1, 0)    = 0 (Timeout)
+write(6, "\1\0\0\0\0\0\0\0", 8)         = 8
+poll([{fd=5, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=51, events=POLLIN}], 4, -1) = 1 ([{fd=6, revents=POLLIN}])
+read(6, "\1\0\0\0\0\0\0\0", 16)         = 8
+poll([{fd=5, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=51, events=POLLIN}], 4, -1) = 1 ([{fd=51, revents=POLLIN}])
+write(6, "\1\0\0\0\0\0\0\0", 8)         = 8
+recvmsg(51, {msg_name=NULL, msg_namelen=0, msg_iov=[{iov_base="l\1\1\1\20\0\0\0>\v\0\0\232\0\0\0", iov_len=16}], msg_iovlen=1, msg_controllen=0, msg_flags=MSG_CMSG_CLOEXEC}, MSG_CMSG_CLOEXEC) = 16
+poll([{fd=51, events=POLLIN}], 1, 0)    = 1 ([{fd=51, revents=POLLIN}])
+recvmsg(51, {msg_name=NULL, msg_namelen=0, msg_iov=[{iov_base="\7\1s\0\24\0\0\0org.freedesktop.DBus\0\0\0\0"..., iov_len=176}], msg_iovlen=1, msg_controllen=0, msg_flags=MSG_CMSG_CLOEXEC}, MSG_CMSG_CLOEXEC) = 176
+write(6, "\1\0\0\0\0\0\0\0", 8)         = 8
+write(6, "\1\0\0\0\0\0\0\0", 8)         = 8
+poll([{fd=5, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}], 3, 0) = 1 ([{fd=6, revents=POLLIN}])
+read(6, "\3\0\0\0\0\0\0\0", 16)         = 8
+write(3, "\1\0\0\0\0\0\0\0", 8)         = 8
+poll([{fd=51, events=POLLIN}], 1, 0)    = 0 (Timeout)
+write(6, "\1\0\0\0\0\0\0\0", 8)         = 8
+poll([{fd=5, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=51, events=POLLIN}], 4, -1) = 1 ([{fd=6, revents=POLLIN}])
+read(6, "\1\0\0\0\0\0\0\0", 16)         = 8
+poll([{fd=5, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=51, events=POLLIN}], 4, -1) = 1 ([{fd=51, revents=POLLIN}])
+write(6, "\1\0\0\0\0\0\0\0", 8)         = 8
+recvmsg(51, {msg_name=NULL, msg_namelen=0, msg_iov=[{iov_base="l\1\1\1\20\0\0\0?\v\0\0\232\0\0\0", iov_len=16}], msg_iovlen=1, msg_controllen=0, msg_flags=MSG_CMSG_CLOEXEC}, MSG_CMSG_CLOEXEC) = 16
+poll([{fd=51, events=POLLIN}], 1, 0)    = 1 ([{fd=51, revents=POLLIN}])
+recvmsg(51, {msg_name=NULL, msg_namelen=0, msg_iov=[{iov_base="\7\1s\0\24\0\0\0org.freedesktop.DBus\0\0\0\0"..., iov_len=176}], msg_iovlen=1, msg_controllen=0, msg_flags=MSG_CMSG_CLOEXEC}, MSG_CMSG_CLOEXEC) = 176
+write(6, "\1\0\0\0\0\0\0\0", 8)         = 8
+write(6, "\1\0\0\0\0\0\0\0", 8)         = 8
+poll([{fd=5, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}], 3, 0) = 1 ([{fd=6, revents=POLLIN}])
+read(6, "\3\0\0\0\0\0\0\0", 16)         = 8
+write(3, "\1\0\0\0\0\0\0\0", 8)         = 8
+poll([{fd=51, events=POLLIN}], 1, 0)    = 0 (Timeout)
+write(6, "\1\0\0\0\0\0\0\0", 8)         = 8
+poll([{fd=5, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=51, events=POLLIN}], 4, -1) = 1 ([{fd=6, revents=POLLIN}])
+read(6, "\1\0\0\0\0\0\0\0", 16)         = 8
+poll([{fd=5, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=51, events=POLLIN}], 4, -1) = 1 ([{fd=51, revents=POLLIN}])
+write(6, "\1\0\0\0\0\0\0\0", 8)         = 8
+recvmsg(51, {msg_name=NULL, msg_namelen=0, msg_iov=[{iov_base="l\1\1\1\20\0\0\0@\v\0\0\232\0\0\0", iov_len=16}], msg_iovlen=1, msg_controllen=0, msg_flags=MSG_CMSG_CLOEXEC}, MSG_CMSG_CLOEXEC) = 16
+poll([{fd=51, events=POLLIN}], 1, 0)    = 1 ([{fd=51, revents=POLLIN}])
+recvmsg(51, {msg_name=NULL, msg_namelen=0, msg_iov=[{iov_base="\7\1s\0\24\0\0\0org.freedesktop.DBus\0\0\0\0"..., iov_len=176}], msg_iovlen=1, msg_controllen=0, msg_flags=MSG_CMSG_CLOEXEC}, MSG_CMSG_CLOEXEC) = 176
+write(6, "\1\0\0\0\0\0\0\0", 8)         = 8
+write(6, "\1\0\0\0\0\0\0\0", 8)         = 8
+poll([{fd=5, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}], 3, 0) = 1 ([{fd=6, revents=POLLIN}])
+read(6, "\3\0\0\0\0\0\0\0", 16)         = 8
+write(3, "\1\0\0\0\0\0\0\0", 8)         = 8
+poll([{fd=51, events=POLLIN}], 1, 0)    = 0 (Timeout)
+write(6, "\1\0\0\0\0\0\0\0", 8)         = 8
+poll([{fd=5, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=51, events=POLLIN}], 4, -1) = 1 ([{fd=6, revents=POLLIN}])
+read(6, "\1\0\0\0\0\0\0\0", 16)         = 8
+poll([{fd=5, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=51, events=POLLIN}], 4, -1) = 1 ([{fd=51, revents=POLLIN}])
+write(6, "\1\0\0\0\0\0\0\0", 8)         = 8
+recvmsg(51, {msg_name=NULL, msg_namelen=0, msg_iov=[{iov_base="l\1\1\1\20\0\0\0A\v\0\0\232\0\0\0", iov_len=16}], msg_iovlen=1, msg_controllen=0, msg_flags=MSG_CMSG_CLOEXEC}, MSG_CMSG_CLOEXEC) = 16
+poll([{fd=51, events=POLLIN}], 1, 0)    = 1 ([{fd=51, revents=POLLIN}])
+recvmsg(51, {msg_name=NULL, msg_namelen=0, msg_iov=[{iov_base="\7\1s\0\24\0\0\0org.freedesktop.DBus\0\0\0\0"..., iov_len=176}], msg_iovlen=1, msg_controllen=0, msg_flags=MSG_CMSG_CLOEXEC}, MSG_CMSG_CLOEXEC) = 176
+write(6, "\1\0\0\0\0\0\0\0", 8)         = 8
+write(6, "\1\0\0\0\0\0\0\0", 8)         = 8
+poll([{fd=5, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}], 3, 0) = 1 ([{fd=6, revents=POLLIN}])
+read(6, "\3\0\0\0\0\0\0\0", 16)         = 8
+write(3, "\1\0\0\0\0\0\0\0", 8)         = 8
+poll([{fd=51, events=POLLIN}], 1, 0)    = 0 (Timeout)
+write(6, "\1\0\0\0\0\0\0\0", 8)         = 8
+poll([{fd=5, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=51, events=POLLIN}], 4, -1) = 1 ([{fd=6, revents=POLLIN}])
+read(6, "\1\0\0\0\0\0\0\0", 16)         = 8
+poll([{fd=5, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=51, events=POLLIN}], 4, -1) = 1 ([{fd=51, revents=POLLIN}])
+write(6, "\1\0\0\0\0\0\0\0", 8)         = 8
+recvmsg(51, {msg_name=NULL, msg_namelen=0, msg_iov=[{iov_base="l\1\1\1\20\0\0\0B\v\0\0\232\0\0\0", iov_len=16}], msg_iovlen=1, msg_controllen=0, msg_flags=MSG_CMSG_CLOEXEC}, MSG_CMSG_CLOEXEC) = 16
+poll([{fd=51, events=POLLIN}], 1, 0)    = 1 ([{fd=51, revents=POLLIN}])
+recvmsg(51, {msg_name=NULL, msg_namelen=0, msg_iov=[{iov_base="\7\1s\0\24\0\0\0org.freedesktop.DBus\0\0\0\0"..., iov_len=176}], msg_iovlen=1, msg_controllen=0, msg_flags=MSG_CMSG_CLOEXEC}, MSG_CMSG_CLOEXEC) = 176
+write(6, "\1\0\0\0\0\0\0\0", 8)         = 8
+write(6, "\1\0\0\0\0\0\0\0", 8)         = 8
+poll([{fd=5, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}], 3, 0) = 1 ([{fd=6, revents=POLLIN}])
+read(6, "\3\0\0\0\0\0\0\0", 16)         = 8
+write(3, "\1\0\0\0\0\0\0\0", 8)         = 8
+poll([{fd=51, events=POLLIN}], 1, 0)    = 0 (Timeout)
+write(6, "\1\0\0\0\0\0\0\0", 8)         = 8
+poll([{fd=5, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=51, events=POLLIN}], 4, -1) = 1 ([{fd=6, revents=POLLIN}])
+read(6, "\1\0\0\0\0\0\0\0", 16)         = 8
+poll([{fd=5, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=51, events=POLLIN}], 4, -1) = 1 ([{fd=51, revents=POLLIN}])
+write(6, "\1\0\0\0\0\0\0\0", 8)         = 8
+recvmsg(51, {msg_name=NULL, msg_namelen=0, msg_iov=[{iov_base="l\1\1\1\20\0\0\0C\v\0\0\232\0\0\0", iov_len=16}], msg_iovlen=1, msg_controllen=0, msg_flags=MSG_CMSG_CLOEXEC}, MSG_CMSG_CLOEXEC) = 16
+poll([{fd=51, events=POLLIN}], 1, 0)    = 1 ([{fd=51, revents=POLLIN}])
+recvmsg(51, {msg_name=NULL, msg_namelen=0, msg_iov=[{iov_base="\7\1s\0\24\0\0\0org.freedesktop.DBus\0\0\0\0"..., iov_len=176}], msg_iovlen=1, msg_controllen=0, msg_flags=MSG_CMSG_CLOEXEC}, MSG_CMSG_CLOEXEC) = 176
+write(6, "\1\0\0\0\0\0\0\0", 8)         = 8
+write(6, "\1\0\0\0\0\0\0\0", 8)         = 8
+poll([{fd=5, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}], 3, 0) = 1 ([{fd=6, revents=POLLIN}])
+read(6, "\3\0\0\0\0\0\0\0", 16)         = 8
+write(3, "\1\0\0\0\0\0\0\0", 8)         = 8
+poll([{fd=51, events=POLLIN}], 1, 0)    = 0 (Timeout)
+write(6, "\1\0\0\0\0\0\0\0", 8)         = 8
+poll([{fd=5, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=51, events=POLLIN}], 4, -1) = 1 ([{fd=6, revents=POLLIN}])
+read(6, "\1\0\0\0\0\0\0\0", 16)         = 8
+poll([{fd=5, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=51, events=POLLIN}], 4, -1 <detached ...>
